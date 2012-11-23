@@ -16,5 +16,32 @@
 .notes Well, that's less than useless, maybe let's try another? Nope! still useless. Guess we're not asking the right question. 
 
 <!SLIDE bullets incremental transition=toss>
-# Why do we program stuff?
+# Why Program Stuff?
 * To make it do something cool/useful
+* Automate tasks
+
+
+
+<!SLIDE bullets>
+# That's Better! 
+* Programming - telling a computer how to do something 
+
+<!SLIDE bullets>
+# How Do We Do It
+* It's like writing a recipe
+
+<!SLIDE bullets>
+# Steps
+* Declare Your Ingredients
+* Prep Ingredients
+* Follow Directions
+* Eat
+* Clean Up
+
+
+
+<!SLIDE smallbullets>
+# Grilled Cheese
+*
+
+
