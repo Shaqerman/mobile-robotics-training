@@ -98,7 +98,7 @@
 <!SLIDE smaller incremental>
 # Translation
 * There's a function called _factorial_
-* It maps it's input (an integer that we just named _x_) to another integer
+* It maps its input (an integer that we just named _x_) to another integer
 * Everything inside the braces is just how it maps it
 
 <!SLIDE smaller incremental>
