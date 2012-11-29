@@ -108,5 +108,23 @@
 * We can denote this as f(x) => y
 * __IMPORTANT__ if f(1) => 4 it should always map to 4. 
 
+<!SLIDE smaller incremental>
+# Math and Programming
+* Almost anything that applies in math applies here too
+* f(g(x)) is completely valid
+* a = f(x) assigns whatever f(x) is to _a_
+* b = f(x)*g(y) 
+* You get the point... 
+
+<!SLIDE bullets incremental>
+# Core Concepts
+* Variables
+* Conditionals
+* Loops
+
+<!SLIDE bullets incremental>
+# Variables
+* Store _something_
+* 
 
 
