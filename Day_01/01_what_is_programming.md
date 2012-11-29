@@ -125,6 +125,130 @@
 <!SLIDE bullets incremental>
 # Variables
 * Store _something_
-* 
+* Store a reference to something
+* Interestingly, not required in a _complete_ language...
+
+<!SLIDE bullets incremental>
+# Variables - How Work?
+* Computer memory is a big array of values
+* Stuff is stored in them
+* A variable stores where those values are stored
+
+<!SLIDE bullets incremental>
+# Conditionals
+* Do something when a condition is met
+* All conditions are either true of false
+* Typically - >, <, ==, <=, >=, or !
+
+<!SLIDE bullets incremental>
+# Conditionals - What Do?
+* if __SOMETHING__ do __THING__
+* ... else do __OTHER THING__
+
+
+<!SLIDE small bullets incremental>
+# A Note About ==
+* You noticed = and ==
+* They're different
+* = sets values
+* == tests equality
+
+<!SLIDE small bullets incremental>
+# Issues with ==/=
+* a == 5 // checks if _a_ is 5
+* a = 5 // sets _a_ to 5
+* 5 == 6 // checks if 5 is 6
+* 5 = 6 // attempts to set 5 equal to 6 
+* 5 == a // checks if 5 is equal to _a_
+* 5 = a // attempts to set 5 to _a_
+
+<!SLIDE small bullets incremental>
+# Loop de Loop! 
+* Do something repeatedly
+* Do something repeatedly
+* Do something repeatedly
+* Do something repeatedly
+* Do something repeatedly
+* Do something repeatedly
+
+<!SLIDE small bullets incremental>
+# What is a Loop
+* It's a structure that allows you to do something until a condition is met
+* Sometimes that condition will never be met
+* It saves repeating yourself
+
+<!SLIDE bullets incremental>
+# By your powers combined ... 
+* I am Captain Program! 
+
+<!SLIDE bullets incremental>
+# Tha...tha...tha... that's all folks!
+* Arranging these concepts is most of programming
+* Technically, you don't need variables
+* But variables make life easier
+
+<!SLIDE bullets incremental>
+# Writing Good Code
+* Good variable names
+* Commented
+* Clear function names
+
+<!SLIDE small bullets incremental>
+# Variable names
+* _a_ is a terrible name
+* _wheelSpeed_ is a good name
+* _i_ is typically used for temporary counters
+* Descriptive is key
+* Speling, stil important! 
+
+
+<!SLIDE small bullets incremental>
+# Commenting 
+* Think 6 months out
+* Coming back to code 
+* If you ask "What idiot did this this way"
+* This is where comments are great
+
+<!SLIDE small bullets incremental>
+# Commenting 
+* Explain edge cases you checked for
+* Explain why an algorithm was chosen
+* Explain why a data structure was chosen
+* Just explain WHY
+
+<!SLIDE small bullets incremental>
+# Self Documenting Code
+* "But it's clear what it does!"
+* Wrong answer!
+* Take the 2 minutes to write up what it does
+
+<!SLIDE small bullets incremental>
+# Comment Driven Coding
+* Write a comment about what a chunk of code does before writing the code
+* Help you figure out what code will do
+* Help break up code logically
+
+<!SLIDE small bullets incremental>
+# Clear Function Names
+* _doSomething_ is a terrible name
+* _doIt_ is even worse
+* _fibonaci_ is a pretty decent one
+* Should be descriptive and concise
+
+<!SLIDE small bullets incremental>
+# How to Start
+* What do you need to do?
+* Draw a picture
+* How can it be broken up?
+* What do I need to store?
+* Start writing code
+
+<!SLIDE small bullets incremental>
+# If You're Stuck
+* Talk it out
+* Refer back to picture
+* Take a walk
+* Work on something else
+* Take a nap
 
 

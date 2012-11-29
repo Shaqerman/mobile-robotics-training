@@ -1,5 +1,6 @@
 { "name": "Mobile Robotics Programming", 
 	"sections": [
-    "Day_01/01_what_is_programming.md"
-    //"Day_01/02_cpp_syntax.md"
+	"Day_01/00_about_me.md",
+    "Day_01/01_what_is_programming.md",
+    "Day_01/02_cpp_syntax.md"
 ]}
