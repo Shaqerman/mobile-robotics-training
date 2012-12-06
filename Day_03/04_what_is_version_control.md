@@ -8,7 +8,7 @@
 * Real world experience
 * Cuz stuff breaks
 
-<!SLIDE small incremental bullets>
+<!SLIDE smaller incremental bullets>
 # Why It's Good
 * Track changes
 * Revert to known good code
@@ -16,6 +16,7 @@
 * Isolate changes
 * Track history
 * Code backup
+* Who broke it?
 
 <!SLIDE small incremental bullets>
 # Options
@@ -60,7 +61,7 @@
 * Created to meet needs of Linux Kernel
 * _Cryptic error messages_
 * _Lots of options, some of them are illogical_
-* _Lots of __dense__ documentation_
+* _Lots of dense documentation_
 
 <!SLIDE small incremental bullets>
 # Mercurial - 2005
