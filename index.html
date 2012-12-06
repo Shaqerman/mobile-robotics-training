@@ -34,6 +34,10 @@
     
       <script type="text/javascript" src="./js/sh_lang/sh_cpp.min.js"></script>
     
+      <script type="text/javascript" src="./js/sh_lang/sh_bash.min.js"></script>
+    
+      <script type="text/javascript" src="./js/sh_lang/sh_c.min.js"></script>
+    
   
 
   
@@ -87,7 +91,38 @@
 </div>
 
 <div id="slides" class="offscreen" style="display:none;">
-<div class="slide" data-transition="none"><div class="content" ref="Day_01/01_what_is_programming/1">
+<div class="slide" data-transition="none"><div class="content" ref="Day_01/00_about_me/1">
+<h1>About Me</h1></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/00_about_me/2">
+<h1>Andrew Schreiber</h1>
+
+<ul>
+<li>Comp Science - Kettering University (2011)</li>
+<li>Software Engineer - MITRE Corporation</li>
+<li>FRC Mentor Team 79</li>
+<li>FTC Mentor Team 5210</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content smaller bullets incremental" ref="Day_01/00_about_me/3">
+<h1>FIRST Experience</h1>
+
+<ul>
+<li>Started in FLL in 2000</li>
+<li>FRC in 2003 on FRC27</li>
+<li>Graduated in 2007</li>
+<li>Lead Software Mentor FRC397 (2008-2010)</li>
+<li>Lead Software Mentor FRC314/FRC3450 (2011)</li>
+<li>Software Mentor FRC79 (2011-Present)</li>
+<li>Lead Engineer FTC5210 (2011-Present)</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/00_about_me/4">
+<h1>FIRST Experience (continued)</h1>
+
+<ul>
+<li>Producer EWCPcast (2011-Present)</li>
+<li>FRC Judge (2011)</li>
+<li>FRC Inspector (2010-Present)</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="Day_01/01_what_is_programming/1">
 <h1>What is Programming?</h1></div>
 </div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="Day_01/01_what_is_programming/2">
 <h1>Programming</h1>
@@ -207,7 +242,7 @@
 <ul>
 <li>There's a function called <em>factorial</em>
 </li>
-<li>It maps it's input (an integer that we just named <em>x</em>) to another integer</li>
+<li>It maps its input (an integer that we just named <em>x</em>) to another integer</li>
 <li>Everything inside the braces is just how it maps it</li>
 </ul></div>
 </div><div class="slide" data-transition="none"><div class="content smaller incremental" ref="Day_01/01_what_is_programming/16">
@@ -219,6 +254,911 @@
 <li>We can denote this as f(x) =&gt; y</li>
 <li>
 <strong>IMPORTANT</strong> if f(1) =&gt; 4 it should always map to 4. </li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content smaller incremental" ref="Day_01/01_what_is_programming/17">
+<h1>Math and Programming</h1>
+
+<ul>
+<li>Almost anything that applies in math applies here too</li>
+<li>f(g(x)) is completely valid</li>
+<li>a = f(x) assigns whatever f(x) is to <em>a</em>
+</li>
+<li>b = f(x)*g(y) </li>
+<li>You get the point... </li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="Day_01/01_what_is_programming/18">
+<h1>Core Concepts</h1>
+
+<ul>
+<li>Variables</li>
+<li>Conditionals</li>
+<li>Loops</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="Day_01/01_what_is_programming/19">
+<h1>Variables</h1>
+
+<ul>
+<li>Store <em>something</em>
+</li>
+<li>Store a reference to something</li>
+<li>Interestingly, not required in a <em>complete</em> language...</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="Day_01/01_what_is_programming/20">
+<h1>Variables - How Work?</h1>
+
+<ul>
+<li>Computer memory is a big array of values</li>
+<li>Stuff is stored in them</li>
+<li>A variable stores where those values are stored</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="Day_01/01_what_is_programming/21">
+<h1>Conditionals</h1>
+
+<ul>
+<li>Do something when a condition is met</li>
+<li>All conditions are either true of false</li>
+<li>Typically - &gt;, &lt;, ==, &lt;=, &gt;=, or !</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="Day_01/01_what_is_programming/22">
+<h1>Conditionals - What Do?</h1>
+
+<ul>
+<li>if <strong>SOMETHING</strong> do <strong>THING</strong>
+</li>
+<li>... else do <strong>OTHER THING</strong>
+</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/01_what_is_programming/23">
+<h1>A Note About ==</h1>
+
+<ul>
+<li>You noticed = and ==</li>
+<li>They're different</li>
+<li>= sets values</li>
+<li>== tests equality</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/01_what_is_programming/24">
+<h1>Issues with ==/=</h1>
+
+<ul>
+<li>a == 5 // checks if <em>a</em> is 5</li>
+<li>a = 5 // sets <em>a</em> to 5</li>
+<li>5 == 6 // checks if 5 is 6</li>
+<li>5 = 6 // attempts to set 5 equal to 6 </li>
+<li>5 == a // checks if 5 is equal to <em>a</em>
+</li>
+<li>5 = a // attempts to set 5 to <em>a</em>
+</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/01_what_is_programming/25">
+<h1>Loop de Loop!</h1>
+
+<ul>
+<li>Do something repeatedly</li>
+<li>Do something repeatedly</li>
+<li>Do something repeatedly</li>
+<li>Do something repeatedly</li>
+<li>Do something repeatedly</li>
+<li>Do something repeatedly</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/01_what_is_programming/26">
+<h1>What is a Loop</h1>
+
+<ul>
+<li>It's a structure that allows you to do something until a condition is met</li>
+<li>Sometimes that condition will never be met</li>
+<li>It saves repeating yourself</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="Day_01/01_what_is_programming/27">
+<h1>By your powers combined ...</h1>
+
+<ul>
+<li>I am Captain Program! </li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="Day_01/01_what_is_programming/28">
+<h1>Tha...tha...tha... that's all folks!</h1>
+
+<ul>
+<li>Arranging these concepts is most of programming</li>
+<li>Technically, you don't need variables</li>
+<li>But variables make life easier</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="Day_01/01_what_is_programming/29">
+<h1>Writing Good Code</h1>
+
+<ul>
+<li>Good variable names</li>
+<li>Commented</li>
+<li>Clear function names</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/01_what_is_programming/30">
+<h1>Variable names</h1>
+
+<ul>
+<li>
+<em>a</em> is a terrible name</li>
+<li>
+<em>wheelSpeed</em> is a good name</li>
+<li>
+<em>i</em> is typically used for temporary counters</li>
+<li>Descriptive is key</li>
+<li>Speling, stil important! </li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/01_what_is_programming/31">
+<h1>Commenting</h1>
+
+<ul>
+<li>Think 6 months out</li>
+<li>Coming back to code </li>
+<li>If you ask "What idiot did this this way"</li>
+<li>This is where comments are great</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/01_what_is_programming/32">
+<h1>Commenting</h1>
+
+<ul>
+<li>Explain edge cases you checked for</li>
+<li>Explain why an algorithm was chosen</li>
+<li>Explain why a data structure was chosen</li>
+<li>Just explain WHY</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/01_what_is_programming/33">
+<h1>Self Documenting Code</h1>
+
+<ul>
+<li>"But it's clear what it does!"</li>
+<li>Wrong answer!</li>
+<li>Take the 2 minutes to write up what it does</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/01_what_is_programming/34">
+<h1>Comment Driven Coding</h1>
+
+<ul>
+<li>Write a comment about what a chunk of code does before writing the code</li>
+<li>Help you figure out what code will do</li>
+<li>Help break up code logically</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/01_what_is_programming/35">
+<h1>Clear Function Names</h1>
+
+<ul>
+<li>
+<em>doSomething</em> is a terrible name</li>
+<li>
+<em>doIt</em> is even worse</li>
+<li>
+<em>fibonaci</em> is a pretty decent one</li>
+<li>Should be descriptive and concise</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/01_what_is_programming/36">
+<h1>How to Start</h1>
+
+<ul>
+<li>What do you need to do?</li>
+<li>Draw a picture</li>
+<li>How can it be broken up?</li>
+<li>What do I need to store?</li>
+<li>Start writing code</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/01_what_is_programming/37">
+<h1>If You're Stuck</h1>
+
+<ul>
+<li>Talk it out</li>
+<li>Refer back to picture</li>
+<li>Take a walk</li>
+<li>Work on something else</li>
+<li>Take a nap</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="Day_01/02_cpp_syntax/1">
+<h1>C++?</h1>
+
+<ul>
+<li>Variables</li>
+<li>Functions</li>
+<li>Loops</li>
+<li>Conditionals</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/02_cpp_syntax/2">
+<h1>Variables</h1>
+
+<ul>
+<li>Start with a letter or underscore</li>
+<li>Can contain any number of numbers, letters, or underscores after that</li>
+<li>May not contain spaces, periods, commas, or other punctuation</li>
+<li>Must have a type declared</li>
+<li>Must be declared before they can be used</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small bullets incremental" ref="Day_01/02_cpp_syntax/3">
+<h1>Types?</h1>
+
+<ul>
+<li>Tell what type of data is in the variable</li>
+<li>Several default types</li>
+<li>Can create your own</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content smaller bullets incremental" ref="Day_01/02_cpp_syntax/4">
+<h1>Built in Types</h1>
+
+<ul>
+<li>
+<strong>char</strong> stores a small number, smallest addressable unit of memory on the machine</li>
+<li>
+<strong>int</strong> stores integer numbers, usually 16 bits in size </li>
+<li>
+<strong>long</strong> stores larger numbers, 32 bits typically</li>
+<li>
+<strong>float</strong> stores single precision floating point numbers</li>
+<li>
+<strong>double</strong> stores double precision floating point numbers</li>
+<li>Sizes vary... <strong>long</strong> <strong>long</strong> &gt; <strong>long</strong> &gt; <strong>int</strong>  and <strong>double</strong> &gt; <strong>float</strong>
+</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small incremental" ref="Day_01/02_cpp_syntax/5">
+<h1>Declaring variables</h1>
+
+<pre class="sh_cpp"><code>    int numberOfCats; // Without an initial value
+    int numberOfDogs = 2; // With an initial value</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/6">
+<h1>Important Things</h1>
+
+<ul>
+<li>All statements end in a ;</li>
+<li>Syntax is [type] [name];</li>
+<li>Alternately [type] [name] = [value];</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/7">
+<h1>Functions</h1>
+
+<ul>
+<li>Syntax is [returnType] [name] ([arg1Type] [arg1Name]...[argNType] [argNName])
+{
+    [content]
+}</li>
+<li>Valid names are same as variable names</li>
+<li>May not return anything, in that case use <em>void</em>
+</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/8">
+<h1>Example</h1>
+
+<pre class="sh_cpp"><code>    int randomNumber(int seed) {
+          return 4;
+        }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/9">
+<h1>Loops</h1>
+
+<ul>
+<li>Two main options</li>
+<li><em>for</em></li>
+<li><em>while</em></li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/10">
+<h1><em>for</em></h1>
+
+<ul>
+<li>Syntax for([initialize];[increment];[endCondition]){[content]}</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/11">
+<h1>
+<em>for</em> ... explained</h1>
+
+<ul>
+<li>
+<em>initialize</em> is run when your loop starts</li>
+<li>
+<em>increment</em> runs each iteration</li>
+<li>
+<em>endCondition</em> is checked each iteration, if it is false loop exits</li>
+<li>
+<em>content</em> is what is run each iteration</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/12">
+<h1>Example</h1>
+
+<pre class="sh_cpp"><code>    int i;
+    for(i=0;i&lt;10;i = i+1)
+    {
+        printf("%d ", i);
+    }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/13">
+<h1>Output</h1>
+
+<ul>
+<li>0 1 2 3 4 5 6 7 8 9</li>
+<li>Why no 10? </li>
+<li>Why 0?</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/14">
+<h1><em>while</em></h1>
+
+<ul>
+<li>Syntax while(condition){[content]}</li>
+<li>Do something until condition is false</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/15">
+<h1>Example</h1>
+
+<pre class="sh_cpp"><code>    while(1==1)
+    {
+        printf("To infinity...\n"):
+    }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/16">
+<h1>Output</h1>
+
+<ul>
+<li>To infinity...</li>
+<li>To infinity...</li>
+<li>To infinity...</li>
+<li>To infinity...</li>
+<li>To infinity...</li>
+<li>To infinity...</li>
+<li>To infinity...</li>
+<li>To infinity...</li>
+<li>To infinity...</li>
+<li>To infinity...</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/17">
+<h1>Infinite Loops</h1>
+
+<ul>
+<li>Actually, useful.</li>
+<li>Can be broken out of other ways (<em>break</em>)</li>
+<li>Doing something forever (Operating Systems?)</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/18">
+<h1>Conditions</h1>
+
+<ul>
+<li>Syntax Options:</li>
+<li>if([condition]) {[code]}</li>
+<li>if([condition]) {[code]} else {[otherCode]}</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/19">
+<h1>Example</h1>
+
+<pre class="sh_cpp"><code>    if(randomNumber(123456) == 4)
+    {
+        printf("You won!\n");
+    }
+    else
+    {
+        printf("Nope!\n")
+    }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/20">
+<h1>Output</h1>
+
+<ul>
+<li>You won!</li>
+<li>
+<em>randomNumber</em> always returns 4... It's a bad random number generator</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/21">
+<h1>Comments</h1>
+
+<ul>
+<li>// is a single line comment</li>
+<li>/* starts a multiline comment</li>
+<li>*/ ends a multiline comment</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/22">
+<h1>Example</h1>
+
+<pre class="sh_cpp"><code>    // This is a single line comment
+    /* This
+        Is
+        A 
+        Multiline Comment
+        ...
+        Also, Sparta
+    */
+    /*This is legal too */
+    randomNumber(/*Who cares what we put here*/ 2); </code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/23">
+<h1>On Whitespace</h1>
+
+<ul>
+<li>Whitespace doesn't matter all that much</li>
+<li>Delimits keywords</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/24">
+<pre class="sh_cpp"><code>    int a = 5;
+    int a=5;
+    int 
+        b
+            =
+                6;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/25">
+<h1>Uses for whitespace</h1>
+
+<ul>
+<li>Lining things up</li>
+<li>Readability</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/26">
+<h1>Keywords</h1>
+
+<ul>
+<li>
+<a href="http://en.wikipedia.org/wiki/C_(programming_language">http://en.wikipedia.org/wiki/C<em>(programming</em>language)#Keywords</a>#Keywords)</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets small incremental" ref="Day_01/02_cpp_syntax/27">
+<h1>Pointers</h1>
+
+<ul>
+<li>I'm going to wave my hands on this</li>
+<li>Until we need them I prefer not to mention them</li>
+<li>Won't be important if you use Java</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="Day_03/04_what_is_version_control/1">
+<h1>Versioning Your Code</h1></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="Day_03/04_what_is_version_control/2">
+<h1>Why?</h1>
+
+<ul>
+<li>Cuz I said so</li>
+<li>It's good practice</li>
+<li>Real world experience</li>
+<li>Cuz stuff breaks</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content smaller incremental bullets" ref="Day_03/04_what_is_version_control/3">
+<h1>Why It's Good</h1>
+
+<ul>
+<li>Track changes</li>
+<li>Revert to known good code</li>
+<li>Great for collaboration</li>
+<li>Isolate changes</li>
+<li>Track history</li>
+<li>Code backup</li>
+<li>Who broke it?</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small incremental bullets" ref="Day_03/04_what_is_version_control/4">
+<h1>Options</h1>
+
+<ul>
+<li>CVS</li>
+<li>SVN</li>
+<li>Bitkeeper</li>
+<li>Git</li>
+<li>Mercurial</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small incremental bullets" ref="Day_03/04_what_is_version_control/5">
+<h1>CVS - 1990</h1>
+
+<ul>
+<li>Client-Server</li>
+<li>Open Source</li>
+<li>Check-in model</li>
+<li><em>Clunky</em></li>
+<li>Suggested Client - Don't use</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content smaller incremental bullets" ref="Day_03/04_what_is_version_control/6">
+<h1>SVN - 2000</h1>
+
+<ul>
+<li>Client-Server</li>
+<li>Open Source</li>
+<li>Commit Model</li>
+<li><em>Terrible error messages</em></li>
+<li><em>Little support for branching</em></li>
+<li><em>Tagging is clunky</em></li>
+<li>Suggested Client - Tortoise SVN</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small incremental bullets" ref="Day_03/04_what_is_version_control/7">
+<h1>Bitkeeper - 2000</h1>
+
+<ul>
+<li>Closed Source </li>
+<li>Distributed </li>
+<li>Commit Model</li>
+<li>Used for Linux Kernel Originally</li>
+<li>Spawned Git after licensing change</li>
+<li>Don't Use, mentioned for historical purposes only</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small incremental bullets" ref="Day_03/04_what_is_version_control/8">
+<h1>Git - 2005</h1>
+
+<ul>
+<li>Open Source </li>
+<li>Distributed</li>
+<li>Commit Model</li>
+<li>Created to meet needs of Linux Kernel</li>
+<li><em>Cryptic error messages</em></li>
+<li><em>Lots of options, some of them are illogical</em></li>
+<li><em>Lots of dense documentation</em></li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small incremental bullets" ref="Day_03/04_what_is_version_control/9">
+<h1>Mercurial - 2005</h1>
+
+<ul>
+<li>Open Source</li>
+<li>Distributed</li>
+<li>Commit Model</li>
+<li>Created to meet same needs as Git</li>
+<li><em>Better error messages</em></li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small incremental bullets" ref="Day_03/04_what_is_version_control/10">
+<h1>Why git?</h1>
+
+<ul>
+<li>It's what I know</li>
+<li>Fast</li>
+<li>Distributed</li>
+<li>Open</li>
+<li>Popular</li>
+<li>Space efficient</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="Day_03/05_using_git/1">
+<h1>Using Git</h1></div>
+</div><div class="slide" data-transition="none"><div class="content small incremental bullets" ref="Day_03/05_using_git/2">
+<h1>Installing</h1>
+
+<ul>
+<li>Mac - already good</li>
+<li>Ubuntu - apt-get install git-core</li>
+<li>Windows - http://git-scm.com/download/win</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="Day_03/05_using_git/3">
+<h1>Installing Windows</h1>
+
+<h2>http://git-scm.com/download/win</h2></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="Day_03/05_using_git/4">
+<h1>Initializing a Repository</h1>
+
+<ul>
+<li><em>git init</em></li>
+<li>creates a .git folder</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="Day_03/05_using_git/5">
+<h1>Cloning from existing</h1>
+
+<ul>
+<li>Pulling down initial code from remote</li>
+<li><em>git clone [url]</em></li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="Day_03/05_using_git/6">
+<h1>Let's Practice</h1>
+
+<ul>
+<li>"Hey I just met you, and this is crazy, but here's my library so clone me maybe"</li>
+<li>git@github.com:schreiaj/mobile-robotics-training.git</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="Day_03/05_using_git/7">
+<h1>Make Changes</h1>
+
+<p>"True change comes from within... your text editor."</p></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="Day_03/05_using_git/8">
+<p>[This slide intentionally left blank while I go make changes]</p></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="Day_03/05_using_git/9">
+<h1>Adding files</h1>
+
+<ul>
+<li>Files must be added before they are tracked</li>
+<li><em>git add [file]</em></li>
+<li>Uses globbing</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="Day_03/05_using_git/10">
+<h1>Committing</h1>
+
+<ul>
+<li>Commiting creates a point you can roll back to</li>
+<li><em>git commit -m "[message]"</em></li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="Day_03/05_using_git/11">
+<p>"If ya like then you shoulda put a ring on it... er what?"</p></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="Day_03/05_using_git/12">
+<h1>History</h1>
+
+<ul>
+<li>"Those who do not understand history are doomed to repeat it"</li>
+<li><em>git log</em></li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="Day_03/05_using_git/13">
+<h1>What's This!</h1>
+
+<pre class="sh_bash"><code>    commit cde0b480e0f3995a539f8d822ba0f0a9435d3d8f
+    Author: Andrew Schreiber 
+    Date:   Wed Dec 5 23:24:08 2012 -0500
+
+        Moved git intro into own slide deck so it can 
+        be easily replaced.</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller center" ref="Day_03/05_using_git/14">
+<h1>Commit</h1>
+
+<pre class="sh_bash"><code>    commit cde0b480e0f3995a539f8d822ba0f0a9435d3d8f</code></pre>
+
+<h2>Unique hash to refer to this commit</h2></div>
+</div><div class="slide" data-transition="none"><div class="content smaller center" ref="Day_03/05_using_git/15">
+<h1>Author</h1>
+
+<pre class="sh_bash"><code>    Author: Andrew Schreiber </code></pre>
+
+<h2>Who made this commit</h2></div>
+</div><div class="slide" data-transition="none"><div class="content smaller center" ref="Day_03/05_using_git/16">
+<h1>Date</h1>
+
+<pre class="sh_bash"><code>    Date:   Wed Dec 5 23:24:08 2012 -0500</code></pre>
+
+<h2>When it was made</h2></div>
+</div><div class="slide" data-transition="none"><div class="content smaller center" ref="Day_03/05_using_git/17">
+<h1>Message</h1>
+
+<pre class="sh_bash"><code>    Moved git intro into own slide deck so it can 
+    be easily replaced.</code></pre>
+
+<h2>What was done</h2></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental smaller" ref="Day_03/05_using_git/18">
+<h1>About Commit Messages</h1>
+
+<ul>
+<li>They are like comments</li>
+<li>Clear</li>
+<li>Concise</li>
+<li>Descriptive</li>
+<li>Tells why as well</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental smaller" ref="Day_03/05_using_git/19">
+<h1>When do I commit?</h1>
+
+<ul>
+<li>When you're ready</li>
+<li>Small commits are better</li>
+<li>Descriptive </li>
+<li>Functional/NonFunctional?</li>
+<li>At <strong>LEAST</strong> daily</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental smaller" ref="Day_03/05_using_git/20">
+<h1>Branching</h1>
+
+<ul>
+<li>Branches of a tree</li>
+<li>Typically per feature</li>
+<li>Multiple branches are ok</li>
+<li>Named</li>
+<li>Remote or Local</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental smaller center" ref="Day_03/05_using_git/21">
+<h1>Creating a Branch</h1>
+
+<pre class="sh_bash"><code>    git branch feature
+    git checkout feature</code></pre>
+
+<ul>
+<li>Creates a new branch</li>
+<li>Switches to that branch</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center" ref="Day_03/05_using_git/22">
+<h1>Working on branches</h1>
+
+<ul>
+<li>Keep Calm and Develop On</li>
+<li>Make some commits</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental smaller center" ref="Day_03/05_using_git/23">
+<h1>Warning, Merge Ahead</h1>
+
+<pre class="sh_bash"><code>    git checkout master
+    git merge feature</code></pre>
+
+<ul>
+<li>Switches back to <em>master</em>
+</li>
+<li>Merges changes from feature branch</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center small" ref="Day_03/05_using_git/24">
+<h1>Git Hosting</h1>
+
+<ul>
+<li>Github</li>
+<li>Gitorious</li>
+<li>BitBucket</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center" ref="Day_03/05_using_git/25">
+<h1>Github</h1>
+
+<ul>
+<li><a href="http://github.com/">github.com</a></li>
+<li><a href="https://github.com/edu">It's free</a></li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="Day_03/06_miniq_kit/1">
+<h1>Let's Get Coding</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental smaller center" ref="Day_03/06_miniq_kit/2">
+<h1>What Is This?</h1>
+
+<ul>
+<li>Atmega 128</li>
+<li>Arduino Compatible</li>
+<li>5x Line sensors</li>
+<li>Ambient Light sensor</li>
+<li>IR Communications</li>
+<li>Encoders</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental smaller center" ref="Day_03/06_miniq_kit/3">
+<h1>What's Implemented</h1>
+
+<ul>
+<li>Motors</li>
+<li>LEDS</li>
+<li>Ambient Light sensor</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center" ref="Day_03/06_miniq_kit/4">
+<h1>Motors</h1>
+
+<ul>
+<li>Differential Steer</li>
+<li>Similar to the kitbot</li>
+<li>~1 FPS</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center" ref="Day_03/06_miniq_kit/5">
+<h1>Code</h1>
+
+<pre class="sh_c++"><code>    void setLeftMotor(int speed);
+    void setRightMotor(int speed);</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center" ref="Day_03/06_miniq_kit/6">
+<h1>LEDS</h1>
+
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Library supports on/off</li>
+<li>Hardware supports analog</li>
+<li>Those annoying blue ones are always on</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center" ref="Day_03/06_miniq_kit/7">
+<h1>Code</h1>
+
+<pre class="sh_c++"><code>    void setRedLED(int on);
+    void setGreenLED(int on);</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center" ref="Day_03/06_miniq_kit/8">
+<h1>Code</h1>
+
+<pre class="sh_c++"><code>    analogWrite(RED_LED,value);
+    analogWrite(GREEN_LED,value);</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center" ref="Day_03/06_miniq_kit/9">
+<h1>Getting Started</h1>
+
+<ul>
+<li><em>git clone git@github.com:schreiaj/MiniQ.git</em></li>
+<li>Copy the MiniQ folder to your Arduino Libraries folder</li>
+<li>Open Arduino IDE</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small incremental" ref="Day_03/06_miniq_kit/10">
+<h1>Arduino</h1>
+
+<pre class="sh_cpp"><code>    // Include Library
+    #include &lt;MiniQ.h&gt;
+
+    MiniQ robot;
+    void setup()
+    {
+        //Init serial comms
+        Serial.begin(9600);
+    }
+
+    void loop()
+    {
+        // Your code here
+    }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center" ref="Day_03/06_miniq_kit/11">
+<h1>Challenge</h1>
+
+<ul>
+<li>Drive Forward for 2 seconds</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small incremental" ref="Day_03/06_miniq_kit/12">
+<h1>Arduino</h1>
+
+<pre class="sh_cpp"><code>    // Include Library
+    #include &lt;MiniQ.h&gt;
+
+    MiniQ robot;
+    void setup()
+    {
+        //Init serial comms
+        Serial.begin(9600);
+    }
+
+    void loop()
+    {
+        robot.setLeftMotor(60);
+        robot.setRightMotor(60);
+        delay(2000);
+        robot.setLeftMotor(0);
+        robot.setRightMotor(0);
+    }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center" ref="Day_03/06_miniq_kit/13">
+<h1>Challenge 2</h1>
+
+<ul>
+<li>Drive Backward for 2 seconds</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small incremental" ref="Day_03/06_miniq_kit/14">
+<h1>Arduino</h1>
+
+<pre class="sh_cpp"><code>    // Include Library
+    #include &lt;MiniQ.h&gt;
+
+    MiniQ robot;
+    void setup()
+    {
+        //Init serial comms
+        Serial.begin(9600);
+    }
+
+    void loop()
+    {
+        robot.setLeftMotor(-60);
+        robot.setRightMotor(-60);
+        delay(2000);
+        robot.setLeftMotor(0);
+        robot.setRightMotor(0);
+    }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center" ref="Day_03/06_miniq_kit/15">
+<h1>Challenge 3</h1>
+
+<ul>
+<li>Turn Left for 1 second</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center" ref="Day_03/06_miniq_kit/16">
+<h1>Challenge 4</h1>
+
+<ul>
+<li>Turn Right for 1 second</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center" ref="Day_03/06_miniq_kit/17">
+<h1>Challenge 5</h1>
+
+<ul>
+<li>Read Ambient light sensor</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content small incremental" ref="Day_03/06_miniq_kit/18">
+<h1>Arduino</h1>
+
+<pre class="sh_cpp"><code>    // Include Library
+    #include &lt;MiniQ.h&gt;
+
+    MiniQ robot;
+    void setup()
+    {
+        //Init serial comms
+        Serial.begin(9600);
+    }
+
+    void loop()
+    {
+        Serial.println("%d\n", 
+            robot.getAmbientLight());
+    }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental center" ref="Day_03/06_miniq_kit/19">
+<h1>Challenge 6</h1>
+
+<ul>
+<li>You used git right? </li>
+<li>Roll back to Challenge 2</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content incremental" ref="Day_03/07_frc_differences/1">
+<h1>FRC Differences</h1></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="Day_03/07_frc_differences/2">
+<h1>Processor Speed</h1>
+
+<ul>
+<li>FRC - 400MHZ </li>
+<li>Arduino 16MHZ </li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="Day_03/07_frc_differences/3">
+<h1>Operating System</h1>
+
+<ul>
+<li>FRC - VXWorks Real Time OS</li>
+<li>Arduino - Uh... what OS?</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="Day_03/07_frc_differences/4">
+<h1>Robot Speed</h1>
+
+<ul>
+<li>FRC - 10 -14 FPS common, 20 FPS occasionally</li>
+<li>Arduino - 1-1.5 FPS</li>
 </ul></div>
 </div></div>
 <div id="pauseScreen">
