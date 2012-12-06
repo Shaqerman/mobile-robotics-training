@@ -136,5 +136,14 @@
 * Switches back to _master_
 * Merges changes from feature branch
 
+<!SLIDE bullets incremental center small>
+# Git Hosting
+* Github
+* Gitorious
+* BitBucket
 
+<!SLIDE bullets incremental center>
+# Github
+* [github.com](http://github.com/)
+* [It's free](https://github.com/edu)
 
