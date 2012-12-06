@@ -159,7 +159,8 @@
 
 		void loop()
 		{
-			Serial.println("%d\n", robot.getAmbientLight());
+			Serial.println("%d\n", 
+				robot.getAmbientLight());
 		}
 
 
