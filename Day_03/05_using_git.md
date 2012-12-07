@@ -26,7 +26,7 @@
 <!SLIDE  incremental bullets>
 # Let's Practice
 * "Hey I just met you, and this is crazy, but here's my library so clone me maybe"
-* git@github.com:schreiaj/mobile-robotics-training.git
+* git://github.com/schreiaj/mobile-robotics-training.git
 
 <!SLIDE>
 # Make Changes
