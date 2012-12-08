@@ -101,6 +101,7 @@
 			delay(2000);
 			robot.setLeftMotor(0);
 			robot.setRightMotor(0);
+			while(1);
 		}
 
 
@@ -129,6 +130,7 @@
 			delay(2000);
 			robot.setLeftMotor(0);
 			robot.setRightMotor(0);
+			while(1);
 		}
 
 
@@ -159,8 +161,7 @@
 
 		void loop()
 		{
-			Serial.println("%d\n", 
-				robot.getAmbientLight());
+			Serial.println(robot.getAmbientLight());
 		}
 
 
