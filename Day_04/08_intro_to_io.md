@@ -33,3 +33,14 @@
 # Digital 
 * Signals that are either on or off
 * Varying thresholds for on/off
+
+<!SLIDE incremental bullets>
+# Examples
+* Limit switch
+* Encoder
+* Banner Sensor
+
+<!SLIDE incremental bullets>
+# About Signals
+* All signals in your robot are stored digitally
+* Analog -> Digital conversion
