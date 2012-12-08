@@ -4,7 +4,7 @@
 <!SLIDE incremental bullets>
 # Processor Speed
 * FRC - 400MHZ 
-* Arduino 16MHZ 
+* Arduino - 16MHZ 
 
 <!SLIDE incremental bullets>
 # Operating System
