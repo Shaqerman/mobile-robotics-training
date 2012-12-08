@@ -98,7 +98,7 @@
 	@@@cpp
 		while(1==1)
 		{
-			printf("To infinity...\n"):
+			printf("To infinity...\n");
 		}
 <!SLIDE bullets small incremental>
 # Output 
@@ -134,7 +134,7 @@
 		}
 		else
 		{
-			printf("Nope!\n")
+			printf("Nope!\n");
 		}
 
 <!SLIDE bullets small incremental>
