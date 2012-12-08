@@ -138,9 +138,57 @@
 # Challenge 3
 * Turn Left for 1 second
 
+<!SLIDE small incremental>
+# Arduino
+	@@@cpp
+		// Include Library
+		#include <MiniQ.h>
+
+		MiniQ robot;
+		void setup()
+		{
+			//Init serial comms
+			Serial.begin(9600);
+		}
+
+		void loop()
+		{
+			robot.setLeftMotor(60);
+			robot.setRightMotor(-60);
+			delay(1000);
+			robot.setLeftMotor(0);
+			robot.setRightMotor(0);
+			while(1);
+		}
+
+
 <!SLIDE bullets incremental center>
 # Challenge 4
 * Turn Right for 1 second
+
+<!SLIDE small incremental>
+# Arduino
+	@@@cpp
+		// Include Library
+		#include <MiniQ.h>
+
+		MiniQ robot;
+		void setup()
+		{
+			//Init serial comms
+			Serial.begin(9600);
+		}
+
+		void loop()
+		{
+			robot.setLeftMotor(-60);
+			robot.setRightMotor(60);
+			delay(1000);
+			robot.setLeftMotor(0);
+			robot.setRightMotor(0);
+			while(1);
+		}
+
 
 <!SLIDE bullets incremental center>
 # Challenge 5
