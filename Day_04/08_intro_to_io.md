@@ -125,11 +125,15 @@
 <!SLIDE incremental bullets>
 # SpeedController Class
 * All speed controllers based on this
+* [Class Reference](http://localhost:8080/class_speed_controller.html)
 
-<!SLIDE incremental bullets>
-# Wait, Virtual?
-* You can't create a SpeedController 
-* Defines things required for any speed controller
 
 <!SLIDE incremental bullets>
 # Jaguar
+* [PWM](http://localhost:8080/class_jaguar.html) or [CAN](http://localhost:8080/class_c_a_n_jaguar.html)
+* Suggest PWM
+
+<!SLIDE incremental bullets>
+# [Jaguar](http://localhost:8080/class_jaguar.html)
+* Connected via PWM cable
+* 
