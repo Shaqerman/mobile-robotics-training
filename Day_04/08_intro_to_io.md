@@ -18,7 +18,7 @@
 * Awareness
 
 <!SLIDE incremental bullets>
-# Analog
+# [Analog](http://localhost:8080/class_analog_channel.html)
 * Signals with a range of values
 * Represented with a varying voltage
 
@@ -30,7 +30,7 @@
 * Rate of rotation
 
 <!SLIDE incremental bullets>
-# Digital 
+# [Digital](http://localhost:8080/class_digital_input.html) 
 * Signals that are either on or off
 * Varying thresholds for on/off
 
@@ -73,6 +73,25 @@
 * Clean
 * Can be harder to interpret
 * Harder to debug
+
+<!SLIDE incremental bullets>
+# Interrupts
+## I'mma let you finish but polling is one of the most inefficient ways to watch an input OF ALL TIME! 
+### - Kanye West?
+
+<!SLIDE small incremental bullets>
+# Interrupts
+* Allow interrupting code when triggered
+* Can trigger on
+* Rising
+* Falling
+* Change
+
+<!SLIDE small incremental bullets>
+# ISR
+* Small chunk of code that runs when interrupt triggered
+* Should be FAST
+* Really Fast
 
 <!SLIDE incremental bullets>
 # Output
@@ -129,11 +148,9 @@
 
 
 <!SLIDE incremental bullets>
-# Jaguar
-* [PWM](http://localhost:8080/class_jaguar.html) or [CAN](http://localhost:8080/class_c_a_n_jaguar.html)
-* Suggest PWM
+# Challenge 1
+* Make robot seek dark
 
 <!SLIDE incremental bullets>
-# [Jaguar](http://localhost:8080/class_jaguar.html)
-* Connected via PWM cable
-* 
+
+
