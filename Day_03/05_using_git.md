@@ -4,13 +4,10 @@
 
 <!SLIDE small incremental bullets>
 # Installing
-* Mac - already good
+* Mac - http://git-scm.com/download/mac
+* Mac - install XCode
 * Ubuntu - apt-get install git-core
 * Windows - http://git-scm.com/download/win
-
-<!SLIDE>
-# Installing Windows
-## http://git-scm.com/download/win
 
 <!SLIDE incremental bullets>
 # Initializing a Repository
@@ -26,7 +23,7 @@
 <!SLIDE  incremental bullets>
 # Let's Practice
 * "Hey I just met you, and this is crazy, but here's my library so clone me maybe"
-* git://github.com/schreiaj/mobile-robotics-training.git
+* git clone git://github.com/schreiaj/MiniQ.git
 
 <!SLIDE>
 # Make Changes
