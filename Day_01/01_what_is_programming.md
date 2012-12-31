@@ -87,18 +87,15 @@
 <!SLIDE smaller> 
 # What do they look like?
 	@@@cpp
-	int factorial(int x) {
-		  if (x == 1) 
-		  	return x; 
-		  else 
-		  	return x * factorial(x - 1);
+	int triangleArea(int base, int height) {
+		  return (base*height)/2;
 		}
 .notes Well, that looks ugly and confusing doesn't it? Well, what is it actually saying. 
 
 <!SLIDE smaller incremental>
 # Translation
-* There's a function called _factorial_
-* It maps its input (an integer that we just named _x_) to another integer
+* There's a function called _triangleArea_
+* It maps its inputs (base and height) to another integer
 * Everything inside the braces is just how it maps it
 
 <!SLIDE smaller incremental>
@@ -119,6 +116,7 @@
 <!SLIDE bullets incremental>
 # Core Concepts
 * Variables
+* Operators
 * Conditionals
 * Loops
 
@@ -133,6 +131,20 @@
 * Computer memory is a big array of values
 * Stuff is stored in them
 * A variable stores where those values are stored
+
+<!SLIDE bullets incremental>
+# Operators
+* Just like in math
+* Do an operation
+
+<!SLIDE bullets smaller incremental>
+# Typical Operators
+* + addition
+* - subtraction
+* * multiplication
+* / division 
+* ++ increment
+* -- decrement
 
 <!SLIDE bullets incremental>
 # Conditionals
@@ -192,6 +204,7 @@
 * Good variable names
 * Commented
 * Clear function names
+* Formatting
 
 <!SLIDE small bullets incremental>
 # Variable names
@@ -200,6 +213,7 @@
 * _i_ is typically used for temporary counters
 * Descriptive is key
 * Speling, stil important! 
+* Consistent cApitaliZation
 
 
 <!SLIDE small bullets incremental>
@@ -234,6 +248,12 @@
 * _doIt_ is even worse
 * _fibonaci_ is a pretty decent one
 * Should be descriptive and concise
+
+<!SLIDE small bullets incremental>
+# Formatting
+* Indentation can help readability
+* Shorter line width (57-80 characters)
+* White space
 
 <!SLIDE small bullets incremental>
 # How to Start

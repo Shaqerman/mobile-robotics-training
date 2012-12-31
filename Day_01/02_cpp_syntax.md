@@ -28,6 +28,12 @@
 * __double__ stores double precision floating point numbers
 * Sizes vary... __long__ __long__ > __long__ > __int__  and __double__ > __float__
 
+<!SLIDE bullets incremental>
+# Rough Sizes
+* int: –2,147,483,648 to 2,147,483,647
+* float: 3.4E +/- 38 (7 digits)
+* double: 1.7E +/- 308 (15 digits)
+
 <!SLIDE small incremental>
 # Declaring variables
 	@@@cpp
@@ -39,6 +45,12 @@
 * All statements end in a ;
 * Syntax is [type] [name];
 * Alternately [type] [name] = [value];
+
+<!SLIDE incremental>
+# About const
+* Makes a variable unable to be changed
+* Great for constants
+
 
 <!SLIDE bullets small incremental>
 # Functions
@@ -64,20 +76,20 @@
 
 <!SLIDE bullets small incremental>
 # _for_
-* Syntax for([initialize];[increment];[endCondition]){[content]}
+* Syntax for([initialize];[endCondition];[increment]){[content]}
 
 <!SLIDE bullets small incremental>
 # _for_ ... explained
 * _initialize_ is run when your loop starts
-* _increment_ runs each iteration
-* _endCondition_ is checked each iteration, if it is false loop exits
+* _endCondition_ is checked before each iteration, if it is false loop exits
+* _increment_ runs after each iteration
 * _content_ is what is run each iteration
 
 <!SLIDE bullets small incremental>
 # Example
 	@@@cpp
 		int i;
-		for(i=0;i<10;i = i+1)
+		for(i=0;i<10;i = i++)
 		{
 			printf("%d ", i);
 		}
@@ -184,9 +196,3 @@
 <!SLIDE bullets small incremental>
 # Keywords
 * [http://en.wikipedia.org/wiki/C_(programming_language)#Keywords](http://en.wikipedia.org/wiki/C_(programming_language)#Keywords)
-
-<!SLIDE bullets small incremental>
-# Pointers
-* I'm going to wave my hands on this
-* Until we need them I prefer not to mention them
-* Won't be important if you use Java
